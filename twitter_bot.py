@@ -26,7 +26,11 @@ class TwitterBot:
 
 
 	def like_tweet(self, hashtag):
-		bot = self.bot
+		bot = self.bot        user_insta = InstagramBot("username", "password")
+51
+        user_insta.login() 
+52
+        user_insta.like_photo("nudes")
 		bot.get("https//twitter.com/search?q="+hashtag+"&src=typd")
 		time.sleep(3)
 		for i in range(1,5)
@@ -42,6 +46,7 @@ class TwitterBot:
 			except Exeception as ex:
 				time.sleep(60)
 
-ed = TwitterBot("edinsonrequena33@gmail.com","botdetwitter")
-ed.login()
-ed.like_tweet("nudes")
+if __main__ == '__name__':
+	ed = TwitterBot(" "," ")
+	ed.login()
+	ed.like_tweet("nudes")
