@@ -26,11 +26,6 @@ class TwitterBot:
 
 
 	def like_tweet(self, hashtag):
-		bot = self.bot        user_insta = InstagramBot("username", "password")
-51
-        user_insta.login() 
-52
-        user_insta.like_photo("nudes")
 		bot.get("https//twitter.com/search?q="+hashtag+"&src=typd")
 		time.sleep(3)
 		for i in range(1,5)
